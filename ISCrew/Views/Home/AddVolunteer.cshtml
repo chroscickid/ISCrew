@@ -1,0 +1,32 @@
+﻿@model ISCrew.Models.VolunteerInfo
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Volunteer form</title>
+</head>
+<body>
+    <div>
+        Volunteer Form (Temp)
+    </div>
+    <form asp-action="AddVolunteer" method="post">
+        <p>
+            <label asp-for="firstname">Your first name</label>
+            <input asp-for="firstname" />
+        </p>
+        <p>
+            <label asp-for="lastname">Your last name:</label>
+            <input asp-for="lastname" />
+        </p>
+        <p>
+            <label asp-for="username">Your username:</label>
+            <input asp-for="username" />
+        </p>
+        <p>Will add the rest later</p>
+        <button type="submit">Submit volunteer info</button>
+    </form>
+</body>
+</html>

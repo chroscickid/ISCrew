@@ -10,28 +10,33 @@ namespace ISCrew.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
         {
-            return View();
+            return View("Login");
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Volunteer and oppurtunity page.";
 
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
 
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpGet]
+        public ViewResult AddVolunteer()
+        {
+            return View("AddVolunteer");
+        }
+        [HttpPost]
+        public ViewResult AddVolunteer(VolunteerInfo volunteerInfo)
+        {
+            Repository.AddInfo(volunteerInfo);
+            return View(volunteerInfo);
         }
     }
 }
