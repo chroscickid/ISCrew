@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html> 
+<body> 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<!--  -->
+
+<!--  -->
+<h1>Manage Opportunities Page</h1> 
+<p><h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4></p>	
+Welcome here you can Manage your Opportunities.<br>
+
+<form>
+<select>
+  <option value="select" selected>Please select a option</option>
+  <option value="Change">Change Opportunity Filter</option>
+  <option value="Search" >Search Opportunity</option>
+  <option value="View">View Volunteer Opportunity Matches</option>
+  <option value="Edit">Edit Opportunity</option>
+  <option value="Edit">Add New Opportunity</option>
+   <option value="Add">Delete Opportunity</option>
+</select>
+    <p><input type="submit" value="Submit"></p>
+    </form>
+	
+	<p>list of Opportunities:</p>
+	
+	<table style="width:100%" align="left">
+  <tr>
+    <th colspan="3"><h3>Opportunities</h3></th>
+    
+    
+  </tr>
+  <tr>
+    <td>Opportunity Name</td>
+<td>Date</td>
+    <td>Center</td>
+  </tr>
+  <tr>
+    <td>Opportunity Name</td>
+    <td>Date</td>
+	 <td>Center</td>
+   
+  </tr>
+  <tr>
+   <td>Opportunity Name</td>
+	<td>Date</td>
+	 <td>Center</td>
+    
+    
+  </tr>
+</table>
+	
+	
+	<!--System shows a list of the opportunities along with possible actions the administrator can perform:
+
+a.	Change Opportunity Filter
+b.	Search Opportunity
+c.	View Volunteer Opportunity Matches
+d.	Edit Opportunity
+e.	Add New Opportunity
+f.	Delete Opportunity
+
+The opportunities that are displayed at this step are shown based on the system’s default filter of criteria.
+ 
+  -->
+  
+<p><h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4></p>		
+	<h1>Opportunity: Filter Options</h1> 
+	
+
+
+<form>
+<select>
+  <option value="select" selected>Please select a option</option>
+  <option value="Recent">Most Recent (60 days)</option>
+  <option value="Center" >By Center</option>
+  
+</select>
+    <p><input type="submit" value="Submit"></p>
+    </form>
+	
+	
+	
+		<!--1.5.	Administrator Chooses Option to Change Filter
+The administrator selects the option to change current opportunity filter.
+1.6.	System Displays List of Filters
+The list of filters includes the following:
+a.	Most Recent (60 days)
+b.	By Center
+
+  -->
+  
+  	<!--2.	The administrator types in keyword or name of opportunity.
+3.	The system updates the opportunities that are displayed to only include those that match the search criteria.
+4.	The use case ends.
+
+
+  -->
+  <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<h1> Search Opportunities</h1>
+<form action="/action_page.php">
+<p>Opportunity Name: <input type="text" name="emID"><br></p>
+ <p>Date: <input type="text" name="fname"><br></p>
+  <p>Center: <input type="text" name="lname"><br></p>
+ <p> <button value="Search">Search</button></p>
+  <p><button  value="Back">Back</button></p>
+</form>
+  
+  
+  
+  
+  
+  <!--1.	This alternative flow starts after step 1 of the 2.1 alternative flow (Search Opportunities).
+2.	The system updates the opportunities that are displayed to include no opportunities, since none were found that matched the administrator’s criteria. 
+3.	System shows a message informing the administrator that no opportunities matched the search criteria.
+4.	The use case ends.
+
+ -->
+ <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+ <p>Search Results : Sorry, no matches found </p>
+ 
+ <p><button  value="Back">Back to Search</button>&nbsp;&nbsp;&nbsp;
+
+ <button  value="adminpage">Administration Home Page</button></p>
+ 
+ 
+  
+  
+   <!-- Viw Opportunity Matches
+1.	The administrator performs at the Basic Flow and Alternative Flow 2.1 (Search Volunteers) as needed to navigate to a list that includes the volunteer for which he/she wants to perform the action.
+2.	The administrator chooses the View Volunteer Opportunity Matches option to see which opportunities the system has matched with the volunteer.
+3.	The system displays the list of opportunities it has matched with the volunteer.
+4.	The use case ends.
+
+ -->
+ <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p><h1> Opportunity Matches</h1></p>
+
+<form>
+
+   <!-- Viw Opportunity Matches
+if Opportunity Name ==Skill
+print table
+ -->
+    </form>
+	   <!--2.5.	Edit Opportunity
+1.	Selects edit from table next to opportunity.
+2.	System display window to edit information.
+
+ -->
+	
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+
+<table style="width:50%">
+<tr>
+    <th colspan="2">Opportunity Information</th>
+  </tr>
+  <tr>
+    <td>Opportunity Name: Oname<p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Skills: OSkills <p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+    <tr>
+    <td>Date:$ODate<p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Center: $OCenter<p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+ 
+</table>
+
+
+
+
+<!--2.5.	Edit Opportunity
+1.	Selects edit from table next to opportunity.
+2.	System display window to edit information.
+ContactName, contact phone, contact address
+-->
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p>Edit one text box</p>
+<form action="/action_page.php">
+VariableUpdateWhatTOEdit: <input type="text" name="EditBox" value="valueupdating"><br>
+<p><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button></p>
+
+</form>	
+	
+	<!--2.7.	Add New Opportunity
+1.	Selects to add new opportunity.
+2.	System display window to add information.
+
+-->
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+ <p><h1>Add Opportunity</h1></p>
+ <form action="/action_page.php">
+ <table style="width:100%">
+ <td>
+Opportunity Name: <input type="text" name="OName" value=""><br>
+<br>Date: <input type="text" name="ODate" value=""><br>
+<br>Center: <input type="text" name="NCenter" value=""><br>
+
+
+<td>
+<h3>Center:</h3>
+<input type="radio" name="Center" value="Habitat For Humanity">Habitat For Humanity<br>
+  <input type="radio" name="Center" value="Goodwill">Goodwill<br>
+  <input type="radio" name="Center" value="Humane Society" >Humane Society<br>
+   <input type="radio" name="Center" value="Red Cross" > Red Cross<br>
+    <input type="radio" name="Center" value="Hospice" >Hospice<br>
+     <input type="radio" name="Center" value="Volunteers of America" >Volunteers of America<br>
+      <input type="radio" name="Center" value="Angels for Alison" >Angels for Alison<br>
+<input type="radio" name="Center" value="City Rescue Mission">City Rescue Mission<br>
+<input type="radio" name="Center" value="Aging Truth" >Aging Truth<br> 
+<input type="radio" name="Center" value="Ronald McDonald House" >Ronald McDonald House<br> <br>
+
+
+</td>
+<td>
+<h3>Skills Needed:</h3>
+
+
+  <input type="checkbox" name="Skill1" value="Cooking">Cooking<br>
+  <input type="checkbox" name="Skill2" value="Building">Building<br>
+  <input type="checkbox" name="Skill3" value="Arthmetic" >Arthmetic<br>
+   <input type="checkbox" name="Skill4" value="Painting" > Painting<br>
+    <input type="checkbox" name="Skill5" value="MetalWork" >Metal Work<br>
+     <input type="checkbox" name="Skill6" value="Driving" >Driving<br>
+      <input type="checkbox" name="Skill7" value="Medical" >Medical<br>
+<input type="checkbox" name="Skill8" value="Computing">Computing<br>
+<input type="checkbox" name="Skill9" value="Campaigning" >Campaigning<br> 
+<input type="checkbox" name="Skill9" value="Campaigning" >Sewing<br> <br>
+<input type="checkbox" name="Skill10" value="None" >None<br> <br>
+</td>
+
+
+
+  
+
+
+<!--2.8.	Delete Opportunity
+1.	Selects delete from table next to opportunity.
+2.	Data on page refreshes to correspond.
+
+print list with delete onclick button-method
+-->
+		<table  cellpadding="10"style="width:100%" align="left">
+  <tr>
+    <th colspan="4"><h3>Opportunities</h3></th>
+    
+    
+  </tr>
+  <tr>
+   <td>Opportunity Name  <a href="Edit link goes here">Edit</a></td>
+	<td>Date   <a href="Edit link goes here">Edit</a></td>
+<td>Center   <a href="Edit link goes here">Edit</a></td>  
+	    <td><button type="button">Remove</button></td>
+  </tr>
+  <tr>
+   <td>Opportunity Name  <a href="Edit link goes here">Edit</a></td>
+    	<td>Date   <a href="Edit link goes here">Edit</a></td>
+<td>Center   <a href="Edit link goes here">Edit</a></td>  
+	  <td><button type="button">Remove</button></td>
+   
+  </tr>
+  <tr>
+   <td>Opportunity Name  <a href="Edit link goes here">Edit</a></td>
+	<td>Date   <a href="Edit link goes here">Edit</a></td>
+	 <td>Center   <a href="Edit link goes here">Edit</a></td>  
+	  <td><button type="button">Remove</button></td>
+    
+    
+  </tr>
+</table>
+	
+	
+	
+	
+</body> 
+</html>

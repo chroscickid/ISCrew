@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body> 
+<!--  -->
+
+<!--  -->
+<h1>Manage Volunteers Page</h1>
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p>Welcome here you can Manage your Volunteers.</p><br>
+<!--The system shows a list of the volunteers 
+along with possible actions the administrator can take for each of them.
+ The relevant actions are the following:
+
+a.	Change Volunteer Filter
+b.	Search Volunteers
+c.	View Volunteer Opportunity Matches
+d.	Edit Volunteer
+e.	Add New Volunteer
+
+The volunteers displayed at this step are shown 
+based on the systemâ€™s default filter of criteria for which categories of 
+volunteers show up. 
+  -->
+
+<form>
+<select>
+  <option value="select" selected>Please select a option</option>
+  <option value="Change">Change Volunteer Filter</option>
+  <option value="Search" >Search Volunteers</option>
+  <option value="View">View Volunteer Opportunity Matches</option>
+  <option value="Edit">Edit Volunteer</option>
+   <option value="Add">Add New Volunteer</option>
+</select>
+    <p><input type="submit" value="Submit"></p>
+    </form>
+<!--The list of filters includes the following:
+a.	Approved/Pending Approval (volunteers in both approval statuses are included)
+b.	Approved
+c.	Pending Approval 
+d.	Disapproved
+e.	Inactive
+f.	All
+if statement based on change volunteer filter selected 
+Note we can make this a new page if easier than an if statement
+  -->	
+  <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+  <form>
+  <p><h1>Change Volunteer Filter</p></h1>
+<select>
+ <option value="select" selected >Please select a Filter</option>
+  <option value="AP">Approved/Pending Approval </option>
+  <option value="approved" >Approved</option>
+  <option value="pendingApproval">Pending Approval </option>
+  <option value="disapproved">Disapproved</option>
+   <option value="Inactive">Inactive</option>
+   <option value="All">All</option>
+</select>
+    <p><input type="submit" value="Submit"></p>
+	<p><button  value="Back">Back</button></p>
+    </form>
+  
+  <!--  Search Volunteers
+1.	The administrator chooses Search Volunteers option the basic flow step 1.4 (System Displays Administrator Page).
+2.	The administrator specifies the volunteer to search for.
+3.	The system displays list of volunteers matching the search criteria. 
+4.	The use case ends.
+-->
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<h1> Search Volunteers</h1>
+<form action="/action_page.php">
+<p>Employee ID: <input type="text" name="emID"><br></p>
+ <p>First name: <input type="text" name="fname"><br></p>
+  <p>Last name: <input type="text" name="lname"><br></p>
+ <p> <button value="Search">Search</button></p>
+  <p><button  value="Back">Back</button></p>
+</form>
+
+
+<!-- Volunteer Not Found
+1.	This alternative flow starts after step 1 of  alternative flow 2.1 (Administrator Specifies Volunteer to Search For), when the system finds no volunteer matching the search criteria
+2.	System shows a message informing the administrator that no volunteers matched the search criteria.
+3.	The use case ends 
+ -->
+ <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+ <p>Search Results : Sorry, no matches found </p>
+ 
+ <p><button  value="Back">Back to Search</button>&nbsp;&nbsp;&nbsp;
+
+ <button  value="adminpage">Administration Home Page</button></p>
+ 
+ <!-- Viw Opportunity Matches
+1.	The administrator performs at the Basic Flow and Alternative Flow 2.1 (Search Volunteers) as needed to navigate to a list that includes the volunteer for which he/she wants to perform the action.
+2.	The administrator chooses the View Volunteer Opportunity Matches option to see which opportunities the system has matched with the volunteer.
+3.	The system displays the list of opportunities it has matched with the volunteer.
+4.	The use case ends.
+
+ -->
+ <h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p><h1> Opportunity Matches</h1></p>
+
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p><h1> Opportunity Matches</h1></p>
+
+<form>
+
+   <!-- Viw Opportunity Matches
+if Opportunity Name ==Skill
+print table
+ -->
+    </form>
+
+   <!-- Volunteers.Results.
+
+ -->
+<p><h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4></p>	
+
+<table style="width:100%" align="left">
+  <tr>
+    <th><h3>Volunteers</h3></th>
+    
+    
+  </tr>
+  <tr>
+    <td>Jill Smith</td>
+
+    
+  </tr>
+  <tr>
+    <td>Eve Jackson</td>
+    
+   
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    
+    
+  </tr>
+</table>
+<!--1.7.	The administrator chooses the particular filter to use.
+1.8.	The system displays an updated list of the volunteers based on the administrator’s choice.
+1.9.	Use Case Ends
+The use case ends.
+
+  -->	
+
+<!--link do its easier to see pages
+
+  -->	
+
+<a href="Search Volunteers2.1.2.3.html">Manage Volunteers</a>
+</body> 
+</html>

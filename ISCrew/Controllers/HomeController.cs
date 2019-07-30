@@ -35,7 +35,7 @@ namespace ISCrew.Controllers
         [HttpPost]
         public ViewResult AddVolunteer(VolunteerInfo volunteerInfo)
         {
-            Repository.AddInfo(volunteerInfo);
+            VolunteerRepository.AddInfo(volunteerInfo);
             return View(volunteerInfo);
         }
     }

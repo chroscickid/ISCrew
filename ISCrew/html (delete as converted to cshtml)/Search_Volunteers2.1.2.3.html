@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body> 
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+
+<table style="width:75%">
+<tr>
+    <th colspan="2">Volunteer Information</th>
+  </tr>
+  <tr>
+    <td>First Name: $VFirst Name <p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Last Name: $VLast Name <p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+    <tr>
+    <td>Username: $VUsername<p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Password: $VPassword<p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+  <tr>
+    <td colspan="2">Centers where the volunteer prefers to work:
+	$VCenters where the volunteer prefers to work<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Skills/Interests:
+	$VSkills/Interests<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2">Availability times:
+	$VAvailability times<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td>Address:$VAddress<p><a href="Edit link goes here">Edit</a></p></td>
+	<td>Work Phone Number:$VWorkPhone<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+    <tr>
+    <td>Home Phone Number:$VHome<p><a href="Edit link goes here">Edit</a></p></td>
+	<td>Cell Phone Number:$Vcell phone numbers<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Email:
+	$VEmail<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Eduactional Background:
+	$VEducational Background<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2">Current License:
+	$VCurrent Licenses<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+  <tr>
+  <td>Is there is a copy of the volunteers drivers license on file: $yesornoDL
+ <p><a href="Edit link goes here">Edit</a></p></td>
+  <td>Is there is a copy of the volunteers social security card on file: $yesornoSS
+  <p><a href="Edit link goes here">Edit</a></p></td></tr>
+  <tr>
+    <td colspan="2">Volunteer Status:
+	$VStatus<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+
+  </table>
+  
+  
+  <p><table style="width:75%">
+   <tr>
+    <th colspan="2">Emergency Contact Information</th>
+  </tr>
+  <tr>
+    <td>Emergency Contact First Name: $ECFirst Name<p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Emergency Contact Last Name: $ECLast Name<p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+    <tr>
+    <td>Home Phone Number: $ECHomePhone<p><a href="Edit link goes here">Edit</a></p></td>
+    <td>Work Phone Number: $ECWorkPhone<p><a href="Edit link goes here">Edit</a></p></td> 
+  </tr>
+  <tr>
+    <td>Email: $VEmergency Contact Email<p><a href="Edit link goes here">Edit</a></p></td>
+<td>Address:$VEmergency Contact Address<p><a href="Edit link goes here">Edit</a></p></td>
+  </tr>
+ </table>
+</p>
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p>Edit one text box</p>
+<form action="/action_page.php">
+VariableUpdateWhatTOEdit: <input type="text" name="EditBox" value="valueupdating"><br>
+<p><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button></p>
+<!-- 2.4.	Edit Volunteer Profile
+Edits: First, Last Name, Username, Password, Address, Phones, Email, Educational Background, Current License, ContactName, contact phone, contact address
+-->
+</form>
+
+
+
+
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<h1>Edit:Centers that the Volunteer Perfers to Work</h1>
+
+<form action="/action_page.php">
+  <input type="checkbox" name="Center1" value="Habitat For Humanity">Habitat For Humanity<br>
+  <input type="checkbox" name="Center2" value="Goodwill">Goodwill<br>
+  <input type="checkbox" name="Center3" value="Humane Society" >Humane Society<br>
+   <input type="checkbox" name="Center4" value="Red Cross" > Red Cross<br>
+    <input type="checkbox" name="Center5" value="Hospice" >Hospice<br>
+     <input type="checkbox" name="Center6" value="Volunteers of America" >Volunteers of America<br>
+      <input type="checkbox" name="Center7" value="Angels for Alison" >Angels for Alison<br>
+<input type="checkbox" name="Center8" value="City Rescue Mission">City Rescue Mission<br>
+<input type="checkbox" name="Center9" value="Aging Truth" >Aging Truth<br> 
+<input type="checkbox" name="Center10" value="Ronald McDonald House" >Ronald McDonald House<br> <br>
+
+  <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button>
+</form>
+<!-- 2.4.	Edit Volunteer Profile
+Edits:e.	Centers where the volunteer prefers to work
+-->
+</form>
+
+
+
+
+
+
+
+
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<form action="/action_page.php">
+<h1>Skills/Interests:</h1>
+
+<form action="/action_page.php">
+  <input type="checkbox" name="Skill1" value="Cooking">Cooking<br>
+  <input type="checkbox" name="Skill2" value="Building">Building<br>
+  <input type="checkbox" name="Skill3" value="Arthmetic" >Arthmetic<br>
+   <input type="checkbox" name="Skill4" value="Painting" > Painting<br>
+    <input type="checkbox" name="Skill5" value="MetalWork" >Metal Work<br>
+     <input type="checkbox" name="Skill6" value="Driving" >Driving<br>
+      <input type="checkbox" name="Skill7" value="Medical" >Medical<br>
+<input type="checkbox" name="Skill8" value="Computing">Computing<br>
+<input type="checkbox" name="Skill9" value="Campaigning" >Campaigning<br> 
+<input type="checkbox" name="Skill9" value="Campaigning" >Sewing<br> <br>
+
+  <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button>
+
+
+
+<!-- 2.4.	Edit Volunteer Profile
+Edits:e.	f.	Skills/Interests
+-->
+</form>
+
+
+
+
+
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<h1>Edit: Avaliability</h1>
+
+<form action="/action_page.php">
+  
+  
+  
+  <p><table style="width:100%">
+   <tr>
+    <th colspan="7">Avaliability</th>
+  </tr>
+  <col width="256"><col width="256"><col width="256"><col width="256">
+  <col width="256"><col width="256"><col width="256">
+  <tr>
+    <td>Monday<br>
+     <input type="checkbox" name="M1AM" value="1AM">1AM<input type="checkbox" name="M1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="M2AM" value="2AM">2AM<input type="checkbox" name="M2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="M3AM" value="3AM">3AM
+    <input type="checkbox" name="M3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="M4AM" value="4AM">4AM
+    <input type="checkbox" name="M4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="M5AM" value="5AM">5AM
+  <input type="checkbox" name="M5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="M6AM" value="6AM">6AM
+   <input type="checkbox" name="M6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="M7AM" value="7AM">7AM
+    <input type="checkbox" name="M7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="M8AM" value="8AM">8AM
+    <input type="checkbox" name="M8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="M9AM" value="9AM">9AM
+   <input type="checkbox" name="M9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="M10AM" value="10AM">10AM
+   <input type="checkbox" name="M10PM" value="10PM">10PM
+  <br>
+  <input type="checkbox" name="M11AM" value="11AM">11AM
+   <input type="checkbox" name="M11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="M12PM" value="12PM">12PM
+    <input type="checkbox" name="M12AM" value="12AM">12AM
+  <br>
+</td>
+    <td>Tuesday
+ <br>
+     <input type="checkbox" name="T1AM" value="1AM">1AM<input type="checkbox" name="T1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="T2AM" value="2AM">2AM<input type="checkbox" name="T2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="T3AM" value="3AM">3AM
+    <input type="checkbox" name="T3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="T4AM" value="4AM">4AM
+    <input type="checkbox" name="T4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="T5AM" value="5AM">5AM
+  <input type="checkbox" name="T5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="T6AM" value="6AM">6AM
+   <input type="checkbox" name="T6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="T7AM" value="7AM">7AM
+    <input type="checkbox" name="T7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="T8AM" value="8AM">8AM
+    <input type="checkbox" name="T8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="T9AM" value="9AM">9AM
+   <input type="checkbox" name="T9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="T10AM" value="10AM">10AM
+   <input type="checkbox" name="T10PM" value="10PM">10PM
+  <br>
+  <input type="checkbox" name="T11AM" value="11AM">11AM
+   <input type="checkbox" name="T11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="T12PM" value="12PM">12PM
+    <input type="checkbox" name="T12AM" value="12AM">12AM
+  <br>   
+    
+    
+    
+    
+    
+    
+    </td> 
+ 
+    
+    <td>Wednesday
+    <br>
+     <input type="checkbox" name="W1AM" value="1AM">1AM<input type="checkbox" name="W1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="W2AM" value="2AM">2AM<input type="checkbox" name="W2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="W3AM" value="3AM">3AM
+    <input type="checkbox" name="W3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="W4AM" value="4AM">4AM
+    <input type="checkbox" name="W4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="W5AM" value="5AM">5AM
+  <input type="checkbox" name="W5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="W6AM" value="6AM">6AM
+   <input type="checkbox" name="W6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="W7AM" value="7AM">7AM
+    <input type="checkbox" name="W7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="W8AM" value="8AM">8AM
+    <input type="checkbox" name="W8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="W9AM" value="9AM">9AM
+   <input type="checkbox" name="W9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="W10AM" value="10AM">10AM
+   <input type="checkbox" name="W10PM" value="10PM">10PM
+  <br>
+  <input type="checkbox" name="W11AM" value="11AM">11AM
+   <input type="checkbox" name="W11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="W12PM" value="12PM">12PM
+    <input type="checkbox" name="W12AM" value="12AM">12AM
+  <br>   </td>
+    
+    
+    <td>Thursday <br>
+    
+         <input type="checkbox" name="TH1AM" value="1AM">1AM<input type="checkbox" name="TH1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="TH2AM" value="2AM">2AM<input type="checkbox" name="TH2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="TH3AM" value="3AM">3AM
+    <input type="checkbox" name="TH3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="TH4AM" value="4AM">4AM
+    <input type="checkbox" name="TH4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="TH5AM" value="5AM">5AM
+  <input type="checkbox" name="TH5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="TH6AM" value="6AM">6AM
+   <input type="checkbox" name="TH6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="TH7AM" value="7AM">7AM
+    <input type="checkbox" name="TH7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="TH8AM" value="8AM">8AM
+    <input type="checkbox" name="TH8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="TH9AM" value="9AM">9AM
+   <input type="checkbox" name="TH9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="TH10AM" value="10PM">10AM
+  <input type="checkbox" name="TH10PM" value="10PM">10PM
+
+  <br>
+  <input type="checkbox" name="TH11AM" value="11AM">11AM
+   <input type="checkbox" name="TH11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="TH12PM" value="12PM">12PM
+    <input type="checkbox" name="TH12AM" value="12AM">12AM
+  <br>
+    </td> 
+  
+
+    <td>Friday<br>
+    
+<input type="checkbox" name="F1AM" value="1AM">1AM
+<input type="checkbox" name="F1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="F2AM" value="2AM">2AM
+  <input type="checkbox" name="F2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="F3AM" value="3AM">3AM
+    <input type="checkbox" name="F3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="F4AM" value="4AM">4AM
+    <input type="checkbox" name="F4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="F5AM" value="5AM">5AM
+  <input type="checkbox" name="F5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="F6AM" value="6AM">6AM
+   <input type="checkbox" name="F6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="F7AM" value="7AM">7AM
+    <input type="checkbox" name="F7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="F8AM" value="8AM">8AM
+    <input type="checkbox" name="F8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="F9AM" value="9AM">9AM
+   <input type="checkbox" name="F9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="F10AM" value="10PM">10AM
+  <input type="checkbox" name="F10PM" value="10PM">10PM
+
+  <br>
+  <input type="checkbox" name="F11AM" value="11AM">11AM
+   <input type="checkbox" name="F11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="F12PM" value="12PM">12PM
+    <input type="checkbox" name="F12AM" value="12AM">12AM
+  <br>
+    
+    
+    
+    </td>
+<td>Saturday
+<br>
+
+<input type="checkbox" name="SA1AM" value="1AM">1AM
+<input type="checkbox" name="SA1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="SA2AM" value="2AM">2AM
+  <input type="checkbox" name="SA2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="SA3AM" value="3AM">3AM
+    <input type="checkbox" name="SA3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="SA4AM" value="4AM">4AM
+    <input type="checkbox" name="SA4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="SA5AM" value="5AM">5AM
+  <input type="checkbox" name="SA5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="SA6AM" value="6AM">6AM
+   <input type="checkbox" name="SA6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="SA7AM" value="7AM">7AM
+    <input type="checkbox" name="SA7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="SA8AM" value="8AM">8AM
+    <input type="checkbox" name="SA8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="SA9AM" value="9AM">9AM
+   <input type="checkbox" name="SA9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="SA10AM" value="10PM">10AM
+  <input type="checkbox" name="SA10PM" value="10PM">10PM
+
+  <br>
+  <input type="checkbox" name="SA11AM" value="11AM">11AM
+   <input type="checkbox" name="SA11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="SA12PM" value="12PM">12PM
+    <input type="checkbox" name="SA12AM" value="12AM">12AM
+  <br>
+
+</td>
+<td>Sunday<br>
+
+<input type="checkbox" name="SU1AM" value="1AM">1AM
+<input type="checkbox" name="SU1PM" value="1PM">1PM<br>
+  <input type="checkbox" name="SU2AM" value="2AM">2AM
+  <input type="checkbox" name="SU2PM" value="2PM">2PM<br>
+  <input type="checkbox" name="SU3AM" value="3AM">3AM
+    <input type="checkbox" name="SU3PM" value="3PM">3PM
+  <br>
+    <input type="checkbox" name="SU4AM" value="4AM">4AM
+    <input type="checkbox" name="SU4PM" value="4PM">4PM<br>
+  <input type="checkbox" name="SU5AM" value="5AM">5AM
+  <input type="checkbox" name="SU5PM" value="5PM">5PM<br>
+  <input type="checkbox" name="SU6AM" value="6AM">6AM
+   <input type="checkbox" name="SU6PM" value="6AM">6PM
+  <br>
+    <input type="checkbox" name="SU7AM" value="7AM">7AM
+    <input type="checkbox" name="SU7PM" value="7PM">7PM
+    <br>
+  <input type="checkbox" name="SU8AM" value="8AM">8AM
+    <input type="checkbox" name="SU8PM" value="8PM">8PM
+  <br>
+  <input type="checkbox" name="SU9AM" value="9AM">9AM
+   <input type="checkbox" name="SU9PM" value="9PM">9PM
+  <br>
+  <input type="checkbox" name="SU10AM" value="10PM">10AM
+  <input type="checkbox" name="SU10PM" value="10PM">10PM
+
+  <br>
+  <input type="checkbox" name="SU11AM" value="11AM">11AM
+   <input type="checkbox" name="SU11PM" value="11PM">11PM
+  <br>
+  <input type="checkbox" name="SU12PM" value="12PM">12PM
+    <input type="checkbox" name="SU12AM" value="12AM">12AM
+  <br>
+</td>
+ </table><br>
+   <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button><br>
+
+</form>
+
+<p><button  value="Back">Back</button></p>
+<!-- 2.4.	Edit Volunteer Profile
+Edits:e.	f.	Skills/Interests
+-->
+
+
+
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+
+<p><h1>Edit: Variable for Yes or No answers</h1></p>
+<form action="/action_page.php">
+<select>
+<option value="select" selected >Please select a Response</option>
+  <option value="Yes">Yes </option>
+  <option value="No" >No</option>
+  
+</select>
+<p><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button></p>
+<p><button  value="Back">Back</button></p>
+<!-- 2.4.	Edit Volunteer Profile
+Edits:q.	Whether there is a copy of volunteer’s drivers license on file
+r.	Whether there is a copy of volunteer’s social security card on file
+
+-->
+
+</form>
+<h4>Hi, -Administrator Name-  <a href="Logout.html">Logout</a></h4>
+<p><h1>Edit:  Volunteers Approval Status</h1></p>
+<form action="/action_page.php">
+<select>
+<option value="select" selected >Please select a Volunteers Approval Status</option>
+  <option value="AP">Approved/Pending Approval </option>
+  <option value="approved" >Approved</option>
+  <option value="pendingApproval">Pending Approval </option>
+  <option value="disapproved">Disapproved</option>
+   <option value="Inactive">Inactive</option>
+</select>
+    <p><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<Button type="button" value="Cancel">Cancel</button></p>
+	<p><button  value="Back">Back</button></p>
+<!-- 2.4.	Edit Volunteer Profile
+Edits:s.	Volunteer’s Approval Status
+
+-->
+</form>
+<!-- 2.4.	Edit Volunteer Profile
+1.	Administrator performs the Basic Flow and Alternative Flow 2.1 (Search Volunteers) as needed to navigate to a list that includes the volunteer for which he/she wants to perform the action.
+2.	Administrator selects the Edit Volunteer option. 
+3.	System displays the volunteer’s information to the administrator in a format that can be edited. This information is as follows:
+q.	Whether there is a copy of volunteer’s drivers license on file
+r.	Whether there is a copy of volunteer’s social security card on file
+s.	Volunteer’s Approval Status
+4.	Administrator makes changes to the volunteer’s information as needed.
+5.	Administrator selects option to update the volunteer’s information by saving his/her changes.
+6.	System ensures that the updated information is valid.
+7.	If the information is valid, the system saves the updated information. 
+8.	System removes the page showing the volunteer’s information and goes back to where the administrator was before he/she selected the Edit Volunteer option.
+9.	The use case ends.
+
+-->
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- Viw Opportunity Matches
+1.	The administrator performs at the Basic Flow and Alternative Flow 2.1 (Search Volunteers) as needed to navigate to a list that includes the volunteer for which he/she wants to perform the action.
+2.	The administrator chooses the View Volunteer Opportunity Matches option to see which opportunities the system has matched with the volunteer.
+3.	The system displays the list of opportunities it has matched with the volunteer.
+4.	The use case ends.
+
+ -->
+<a href="AddNewVolunteer.html">Add New Volunteer</a>
+</body> 
+</html>

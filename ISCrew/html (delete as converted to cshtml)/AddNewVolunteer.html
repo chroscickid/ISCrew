@@ -1,4 +1,4 @@
-﻿@model ISCrew.Models.VolunteerInfo
+@model ISCrew.Models.VolunteerInfo
 @{
     Layout = null;
 }<!DOCTYPE html>
@@ -18,82 +18,42 @@
         <table style="width:100%">
             <td>
                 <label asp-for="firstname">First name</label>
-                <input asp-for="firstname" /><br><br>
+                <input asp-for="firstname" /><br>
                 <label asp-for="lastname">Last name:</label>
-                <input asp-for="lastname" /><br><br>
+                <input asp-for="lastname" /><br>
                 <label asp-for="username">Username:</label>
-                <input asp-for="username" /><br><br>
-                <label asp-for="passsword">Password:</label>
-                <input asp-for="passsword" /><br><br>
-                <label asp-for="address">Address:</label>
-                <input asp-for="address" /><br><br>
+                <input asp-for="username" /><br>
+                <br>Password: <input type="text" name="LastName" value=""><br>
+                <br>Address: <input type="text" name="LastName" value=""><br>
             </td>
             <td>
                 <h3>Skills/Interests:</h3>
 
-                <input asp-for="cooking" type="checkbox" />
-                <label asp-for="cooking">Cooking:</label><br>
 
-                <input asp-for="building" type="checkbox" />
-                <label asp-for="building">Building:</label><br>
-
-                <input asp-for="arithmetic" type="checkbox" />
-                <label asp-for="arithmetic">Arithmetic:</label><br>
-
-                <input asp-for="painting" type="checkbox" />
-                <label asp-for="painting">Painting:</label><br>
-
-                <input asp-for="metalwork" type="checkbox" />
-                <label asp-for="metalwork">Metalwork:</label><br>
-
-                <input asp-for="driving" type="checkbox" />
-                <label asp-for="driving">Driving:</label><br>
-
-                <input asp-for="medical" type="checkbox" />
-                <label asp-for="medical">Medical:</label><br>
-
-                <input asp-for="computing" type="checkbox" />
-                <label asp-for="computing">Computing:</label><br>
-
-                <input asp-for="campaigning" type="checkbox" />
-                <label asp-for="campaigning">Campaigning:</label><br>
-
-                <input asp-for="sewing" type="checkbox" />
-                <label asp-for="sewing">Sewing:</label><br>
-
+                <input type="checkbox" name="Skill1" value="Cooking">Cooking<br>
+                <input type="checkbox" name="Skill2" value="Building">Building<br>
+                <input type="checkbox" name="Skill3" value="Arthmetic">Arthmetic<br>
+                <input type="checkbox" name="Skill4" value="Painting"> Painting<br>
+                <input type="checkbox" name="Skill5" value="MetalWork">Metal Work<br>
+                <input type="checkbox" name="Skill6" value="Driving">Driving<br>
+                <input type="checkbox" name="Skill7" value="Medical">Medical<br>
+                <input type="checkbox" name="Skill8" value="Computing">Computing<br>
+                <input type="checkbox" name="Skill9" value="Campaigning">Campaigning<br>
+                <input type="checkbox" name="Skill9" value="Campaigning">Sewing<br> <br>
             </td>
             <td>
                 <h3>Centers that the Volunteer Perfers to Work</h3>
+                <input type="checkbox" name="Center1" value="Habitat For Humanity">Habitat For Humanity<br>
+                <input type="checkbox" name="Center2" value="Goodwill">Goodwill<br>
+                <input type="checkbox" name="Center3" value="Humane Society">Humane Society<br>
+                <input type="checkbox" name="Center4" value="Red Cross"> Red Cross<br>
+                <input type="checkbox" name="Center5" value="Hospice">Hospice<br>
+                <input type="checkbox" name="Center6" value="Volunteers of America">Volunteers of America<br>
+                <input type="checkbox" name="Center7" value="Angels for Alison">Angels for Alison<br>
+                <input type="checkbox" name="Center8" value="City Rescue Mission">City Rescue Mission<br>
+                <input type="checkbox" name="Center9" value="Aging Truth">Aging Truth<br>
+                <input type="checkbox" name="Center10" value="Ronald McDonald House">Ronald McDonald House<br> <br>
 
-                <input asp-for="habitatforhumanity" type="checkbox" />
-                <label asp-for="habitatforhumanity">Habitat for Humanity:</label><br>
-
-                <input asp-for="goodwill" type="checkbox" />
-                <label asp-for="goodwill">Goodwill:</label><br>
-
-                <input asp-for="humanesociety" type="checkbox" />
-                <label asp-for="humanesociety">Humane Society:</label><br>
-
-                <input asp-for="redcross" type="checkbox" />
-                <label asp-for="redcross">Red Cross:</label><br>
-
-                <input asp-for="hospice" type="checkbox" />
-                <label asp-for="hospice">Hospice:</label><br>
-
-                <input asp-for="volunteersofamerica" type="checkbox" />
-                <label asp-for="volunteersofamerica">Volunteers of America:</label><br>
-
-                <input asp-for="angelsforalison" type="checkbox" />
-                <label asp-for="angelsforalison">Angels for Alison:</label><br>
-
-                <input asp-for="cityrescuemission" type="checkbox" />
-                <label asp-for="cityrescuemission">City Rescue Mission:</label><br>
-
-                <input asp-for="agingtruth" type="checkbox" />
-                <label asp-for="agingtruth">Aging Truth:</label><br>
-
-                <input asp-for="ronaldmcdonaldhouse" type="checkbox" />
-                <label asp-for="ronaldmcdonaldhouse">Ronald McDonald House:</label><br>
 
             </td>
         </table>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body> 
+<h4>Hi, -Administrator Name-  <a href="Logon.html">Logout</a></h4>
+
+<table style="width:75%">
+<tr>
+    <th colspan="2">Volunteer Information</th>
+  </tr>
+  <tr>
+    <td>First Name: $VFirst Name <p><a href="EditVariable.html">Edit</a></p></td>
+    <td>Last Name: $VLast Name <p><a href="EditVariable.html">Edit</a></p></td> 
+  </tr>
+    <tr>
+    <td>Username: $VUsername<p><a href="EditVariable.html">Edit</a></p></td>
+    <td>Password: $VPassword<p><a href="EditVariable.html">Edit</a></p></td> 
+  </tr>
+  <tr>
+    <td colspan="2">Centers where the volunteer prefers to work:
+	$VCenters where the volunteer prefers to work<p><a href="EditCenters.html">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Skills/Interests:
+	$VSkills/Interests<p><a href="Editskills.html">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2">Availability times:
+	$VAvailability times<p><a href="EditAvaliability.html">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td>Address:$VAddress<p><a href="EditVariable.html">Edit</a></p></td>
+	<td>Work Phone Number:$VWorkPhone<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+    <tr>
+    <td>Home Phone Number:$VHome<p><a href="EditVariable.html">Edit</a></p></td>
+	<td>Cell Phone Number:$Vcell phone numbers<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Email:
+	$VEmail<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+   <tr>
+    <td colspan="2">Eduactional Background:
+	$VEducational Background<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2">Current License:
+	$VCurrent Licenses<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+  <tr>
+  <td>Is there is a copy of the volunteers drivers license on file: $yesornoDL
+ <p><a href="yesornoEdit.html">Edit</a></p></td>
+  <td>Is there is a copy of the volunteers social security card on file: $yesornoSS
+  <p><a href="yesornoEdit.html">Edit</a></p></td></tr>
+  <tr>
+    <td colspan="2">Volunteer Status:
+	$VStatus<p><a href="EditStatus.html">Edit</a></p></td>
+  </tr>
+
+  </table>
+  
+  
+  <p><table style="width:75%">
+   <tr>
+    <th colspan="2">Emergency Contact Information</th>
+  </tr>
+  <tr>
+    <td>Emergency Contact First Name: $ECFirst Name<p><a href="EditVariable.html">Edit</a></p></td>
+    <td>Emergency Contact Last Name: $ECLast Name<p><a href="EditVariable.html">Edit</a></p></td> 
+  </tr>
+    <tr>
+    <td>Home Phone Number: $ECHomePhone<p><a href="EditVariable.html">Edit</a></p></td>
+    <td>Work Phone Number: $ECWorkPhone<p><a href="EditVariable.html">Edit</a></p></td> 
+  </tr>
+  <tr>
+    <td>Email: $VEmergency Contact Email<p><a href="EditVariable.html">Edit</a></p></td>
+<td>Address:$VEmergency Contact Address<p><a href="EditVariable.html">Edit</a></p></td>
+  </tr>
+ </table>
+</p>
+<Button type="button" onclick="location.href= 'ManageVolunteers.html'"value="Cancel">Cancel</button>
+</body> 
+</html>
