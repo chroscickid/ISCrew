@@ -1,0 +1,144 @@
+﻿@model IEnumerable<AdministrationMng.Models.Volunteer>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+
+@using (Html.BeginForm("Search", "Volunteer", FormMethod.Get))
+{
+   
+    <h2><br /><br/>Search</h2>
+
+
+
+    <b>Search by:</b>@Html.RadioButton("searchBy", "VFname")<text>First Name</text>
+    @Html.RadioButton("searchBy", "VLname", new { @checked ="checked"})<text>Last Name</text><br />
+    @Html.TextBox("Search");
+    <p><br /><input type="submit" value="Search" /></p>
+
+
+    <head>
+        <style>
+            #pretty {
+                margin: 1px;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+                td, #pretty th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+
+                #pretty tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                #pretty tr:hover {
+                    background-color: #ddd;
+                }
+
+                #pretty th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: #e6f2ff;
+                    color: black;
+                    width: auto;
+                }
+
+            
+       
+        </style>
+        <style>
+            div.j {
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <p>
+        <h1>Manage Volunteers </h1>
+    </p>
+    <p><h4>Welcome, Administrator</h4></p>
+    <p>Here you can Manage your Volunteers.</p><br>
+    <table id="pretty">
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Desired Center to Volunteer at
+            </th>
+            <th colspan="3">
+                Contact Information
+            </th>
+            <th>
+                Skills
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+                                                       @if (Model.Count() == 0)
+                                                       {
+                                                           <tr>
+                                                               <td colspan="25"> Records not found </td>
+                                                           </tr>
+                                                       }
+                                                       else
+                                                       {
+                                                           foreach (var item in Model)
+                                                           {
+                                                           <tr>
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VFname)
+                                                               </td>
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VLname)
+                                                               </td>
+
+
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.Center)
+                                                               </td>
+
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VAddress)
+                                                               </td>
+
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VCellPhone)
+                                                               </td>
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VEmail)
+                                                               </td>
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.VSkills)
+                                                               </td>
+                                                               <td>
+                                                                   @Html.DisplayFor(modelItem => item.Status)
+                                                               </td>
+
+                                                               <td>
+                                                                   @Html.ActionLink("Edit", "Edit", new { Fid = item.VFname, Lid = item.VLname })|
+                                                                   @Html.ActionLink("Details", "Details", new { Fid = item.VFname, Lid = item.VLname }) |
+                                                                   @Html.ActionLink("Delete", "Delete", new { Fid = item.VFname, Lid = item.VLname }) |
+                                                                   @Html.ActionLink("Match not working yet", "DetailsMatchV", new { Fid = item.VFname, Lid = item.VLname })
+                                                               </td>
+                                                           </tr>
+                                                           }
+                                                       }
+
+                                                   </table>
+                                             
+}

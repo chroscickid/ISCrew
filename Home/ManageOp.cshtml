@@ -1,0 +1,104 @@
+﻿@model IEnumerable<AdministrationMng.Models.Opportunity>
+
+@{
+    ViewBag.Title = "ManageOp";
+}
+<head>
+    <style>
+        #pretty {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            td, #pretty th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #pretty tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #pretty tr:hover {
+                background-color: #ddd;
+            }
+
+            #pretty th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #e6f2ff;
+                color: black;
+                width: auto;
+            }
+    </style>
+</head>
+<p> </p>
+<p> </p>
+<p>
+    <h1><br /><br />Manage Opportunites</h1>
+<p><h4>Welcome, Administrator</h4></p>
+<p>Here you can Manage your Opportunities.</p><br>
+
+
+
+<table id="pretty">
+    <tr>
+      
+        <th>
+            Opportunity Name
+        </th>
+        <th>
+          Center
+        </th>
+        <th>
+           Date
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Center)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+
+
+
+        @if (ViewBag.Message == "FirstScreen")
+        {
+            <td>
+                @Html.ActionLink("Edit", "../Volunteer/EditOpportunity", new { Name = item.OName }) |
+                @Html.ActionLink("Details", "../Volunteer/DetailO", new { Name = item.OName }) |
+                @Html.ActionLink("Delete", "../Volunteer/DeleteOpportunity", new { Name = item.OName }) |
+                @Html.ActionLink("Match", "../Volunteer/DetailsMatchU", new { Name = item.OName })
+            </td>
+        }
+
+        @if (ViewBag.Message == "Edit")
+        {
+            <td>
+                @Html.ActionLink("Edit", "../Volunteer/EditOpportunity", new { Name = item.OName })
+            </td>}
+
+        @if (ViewBag.Message == "Delete")
+        {
+            <td>
+                @Html.ActionLink("Delete", "../Volunteer/DeleteOpportunity", new { Name = item.OName })
+            </td>}
+        @if (ViewBag.Message == null)
+        {
+            <td></td>}
+
+    </tr>
+    }
+
+</table>

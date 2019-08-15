@@ -1,0 +1,43 @@
+﻿@model AdministrationMng.Models.Opportunity
+
+@{
+    ViewBag.Title = "DetailO";
+}
+
+<h2>Opportunity Details</h2>
+
+<div>
+    <h4>Opportunity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OName)
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.OName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Center)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Center)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditOpportunity", new { Name = Model.OName }) |
+    @Html.ActionLink("Back to List", "../Home/ManageOp")
+</p>

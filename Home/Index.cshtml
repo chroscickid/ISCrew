@@ -1,0 +1,63 @@
+﻿
+@model AdministrationMng.Models.Table
+
+@{
+
+    ViewBag.Title = "Index1";
+}
+
+<header>
+    <h1>&nbsp;Administrator Login</h1>
+</header>
+<p>Welcome, Please input a valid Administrator Username and Password</p>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+
+{@Html.AntiForgeryToken()
+@Html.ValidationSummary(true)
+if (@ViewBag.Message == "Your Username or Password could not be found")
+{ <div style="background-color:red; color: lightgoldenrodyellow; font-family:Sans-serif">
+        <h4> @ViewBag.Message</h4>
+    </div>
+}
+if (@ViewBag.Message == "You have successfully Logged out")
+{<div style="background-color:white; color: blue; font-family:Sans-serif">
+        <h4> @ViewBag.Message</h4>
+    </div> }
+<table>
+    <tr>
+
+        <td>@Html.LabelFor(a => a.Username)</td>
+        <td>@Html.TextBoxFor(a => a.Username)</td>
+        <td>@Html.ValidationMessageFor(a => a.Username)</td>
+    </tr>
+    <tr>
+        <td><br /></td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(a => a.Password)</td>
+        <td>@Html.PasswordFor(a => a.Password)</td>
+        <td>@Html.ValidationMessageFor(a => a.Password)</td>
+
+    </tr>
+    <tr>
+        <td><br /></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Login" />
+
+        </td>
+    </tr>
+</table>
+<div>
+  
+</div>
+
+}
+@* This below line is for create javascript section *@
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

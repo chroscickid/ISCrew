@@ -1,0 +1,378 @@
+﻿@model AdministrationMng.Models.Volunteer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Volunteer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            First Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VFname)
+        </dd>
+        <dt>
+            Last Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VLname)
+        </dd>
+        <dt>
+            Username
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VUsername)
+        </dd>
+
+        <dt>
+            Password
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VPassword)
+        </dd>
+
+        <dt>
+            Educational Background
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEdu)
+        </dd>
+
+        <dt>
+            Desired Center to work with
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Center)
+        </dd>
+
+        <dt>
+            Skills
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VSkills)
+        </dd>
+
+        <dt>
+            Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VAddress)
+        </dd>
+
+        <dt>
+            Work Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VWorkPhone)
+        </dd>
+
+        <dt>
+            Home Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VHomePhone)
+        </dd>
+
+        <dt>
+            Cell Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VCellPhone)
+        </dd>
+
+        <dt>
+            Email Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEmail)
+        </dd>
+
+        <dt>
+            Do you have a Current License
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VCurrentLicense)
+        </dd>
+
+        <dt>
+            Do you Have a Driver License on File
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VDL)
+        </dd>
+
+        <dt>
+            Do you Have a SS Number on File
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VSS)
+        </dd>
+
+        <dt>
+            Emergency Contact First Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECFname)
+        </dd>
+
+        <dt>
+            Emergency Contact Last Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECLname)
+        </dd>
+
+        <dt>
+            Emergency Contact Home Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECHomePhone)
+        </dd>
+
+        <dt>
+            Emergency Contact Work Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECWorkPhone)
+        </dd>
+
+        <dt>
+            Emergency Contact Email Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECEmail)
+        </dd>
+
+        <dt>
+            Emergency Contact Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECAddress)
+        </dd>
+        <dt>
+            Status
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            Avaliability
+        </dt>
+
+        <dd></dd>
+
+        @if (@Html.DisplayFor(model => model.Avaliability.MM) != null)
+        {
+            <dt>
+                Monday Morning
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.MM)
+            </dd>
+        }
+
+        @if (@Html.DisplayFor(model => model.Avaliability.MA) != null)
+        {
+            <dt>
+                Monday Afternoon
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.MA)
+            </dd>
+        }
+        @if (@Html.DisplayFor(model => model.Avaliability.ME) != null)
+        {
+            <dt>
+                Monday Evening
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.ME)
+            </dd>
+        }
+        @if (@Html.DisplayFor(model => model.Avaliability.TM) != null)
+        {
+            <dt>
+                Tuesday Morning
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.TM)
+            </dd>}
+
+        @if (@Html.DisplayFor(model => model.Avaliability.TA) != null)
+        {
+            <dt>
+                Tuesday Afternoon
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.TA)
+            </dd>}
+        @if (@Html.DisplayFor(model => model.Avaliability.TE) != null)
+        {
+            <dt>
+                Tuesday Evening
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Avaliability.TE)
+            </dd>}
+           @if (Html.DisplayFor(model => model.Avaliability.WM) != null)
+            {
+                <dt>
+                    Wednesday Morning
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.WM)
+                </dd>}
+            @if (@Html.DisplayFor(model => model.Avaliability.WA) != null)
+            {
+                <dt>
+                    Wednesday Afternoon
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.WA)
+                </dd>}
+            @if (@Html.DisplayFor(model => model.Avaliability.WE) != null)
+
+            {
+                <dt>
+                    Wednesday Evening
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.WE)
+                </dd>}
+
+            @if (@Html.DisplayFor(model => model.Avaliability.THM) != null)
+            {
+                <dt>
+                    Thursday Morning
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.THM)
+                </dd>
+            }
+
+            @if (Html.DisplayFor(model => model.Avaliability.THA) != null)
+            {
+                <dt>
+                    Thursday Afternoon
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.THA)
+                </dd>}
+            @if (@Html.DisplayFor(model => model.Avaliability.THE) != null)
+            {
+                <dt>
+                    Thursday Evening
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.THE)
+
+                </dd>}
+            @if (@Html.DisplayFor(model => model.Avaliability.FM) != null)
+            {
+                <dt>
+                    Friday Morning
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Avaliability.FM)
+                </dd>}
+
+
+
+            @if (@Html.DisplayFor(model => model.Avaliability.FA) != null)
+            {
+                <dt>
+                    Friday Afternoon
+                </dt>
+
+                <dd>
+                    
+                    @Html.DisplayFor(model => model.Avaliability.FA)
+                </dd>}
+
+
+          
+            }
+            @if (@Html.DisplayFor(model => model.Avaliability.FE) !=null)
+            {
+                <dt>
+                    Friday Evening
+                </dt>
+                <dd>Yes</dd>
+            }
+
+            @if (@Html.DisplayFor(model => model.Avaliability.All) != null)
+            {
+                <dt>
+                    Availiable all times
+                </dt>
+                <dd>Yes</dd>
+            }
+            @if (@Html.DisplayFor(model => model.VImage.VSSpic) != null)
+            {
+                <dt>
+                    Social Security Photo
+                </dt>
+
+                <dd>
+
+                </dd>}
+            @if (@Html.DisplayFor(model => model.VImage.VDLpic) != null)
+            {
+                <dt>
+                    Drivers License Photo
+                </dt>
+
+                <dd>
+                  
+                </dd>
+            }
+               
+
+
+            </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  Fid = Model.VFname, Lid = Model.VLname  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

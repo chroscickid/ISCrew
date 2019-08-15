@@ -1,0 +1,200 @@
+﻿@model AdministrationMng.Models.Volunteer
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Volunteer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VUsername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VUsername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VEdu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEdu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Center)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Center)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VSkills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VSkills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VWorkPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VWorkPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VHomePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VHomePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VCellPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VCellPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VCurrentLicense)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VCurrentLicense)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VDL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VDL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VSS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VSS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECLname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECLname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECHomePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECHomePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECWorkPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECWorkPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VImage.VFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VImage.VFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Avaliability.VFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Avaliability.VFname)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

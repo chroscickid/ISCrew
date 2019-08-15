@@ -1,0 +1,160 @@
+﻿
+@model IEnumerable<Object>
+
+@{
+    ViewBag.Title = "DetailsMatchV";
+    List<AdministrationMng.Models.Volunteer> lstvolunteers = Model.ToList()[0] as List<AdministrationMng.Models.Volunteer>;
+    List<AdministrationMng.Models.Opportunity> lstopportunity = Model.ToList()[1] as List<AdministrationMng.Models.Opportunity>;
+
+
+}
+
+<head>
+    <style>
+        #pretty {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            td, #pretty th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #pretty tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #pretty tr:hover {
+                background-color: #ddd;
+            }
+
+            #pretty th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #e6f2ff;
+                color: black;
+                width: auto;
+            }
+    </style>
+</head>
+
+    <p> </p>
+    <h1><br />Manage Matches </h1>
+    <p><h4>Welcome, Administrator</h4></p>
+    <p>Here you can Manage your Volunteers and Opportunity Matches.</p><br>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+  
+    <p> </p>
+    <p> </p>
+
+    <h2>Volunteer matched with Opportunities by Centers</h2>
+
+    <h3>Volunteers</h3>
+    <table id="pretty">
+        <tr>
+            <th>Center</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+         
+            <th colspan="4">Contact Info</th>
+            <th>Skills</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+        @if (lstvolunteers.Count() == 0)
+        {
+            <tr>
+                <td colspan="25"> Records not found </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in lstvolunteers)
+            {
+                <tr>
+                    <td>
+                        @item.Center
+                    </td>
+                    <td>
+                        @item.VFname
+                    </td>
+                    <td>
+                        @item.VLname
+                    </td>
+                  
+                    <td>
+                        @item.VWorkPhone
+                    </td>
+                    <td>
+                        @item.VHomePhone
+                    </td>
+                    <td>
+                        @item.VCellPhone
+                    </td>
+                    <td>
+                        @item.VEmail
+                    </td>
+                    <td>
+                        @item.VSkills
+                    </td>
+                    <td>
+                        @item.Status
+                    </td>
+                    <td>
+                       
+                        @Html.ActionLink("Match", "DetailsMatchV", new { Fid = item.VFname, Lid = item.VLname })
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+
+
+
+
+
+
+
+    <h3>Opportunities</h3>
+    <table id="pretty">
+        <tr>
+            <th>Center</th>
+            <th>opportunity Name</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+        @if (lstopportunity.Count() == 0)
+        {
+            <tr>
+                <td colspan="25"> Records not found </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in lstopportunity)
+            {
+                <tr>
+                    <td>
+                        @item.Center
+                    </td>
+                    <td>
+                        @item.OName
+                    </td>
+                    <td>
+                        @item.Date
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Match", "DetailsMatchU", new { Name = item.OName })
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+
+
